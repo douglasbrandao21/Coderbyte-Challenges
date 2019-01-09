@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Challenge - First Reverse</title>
+    </head>
+
+    <body>
+        <h1>First Reverse</h1>
+
+        <input type="text" id="str" placeholder="String">
+        <button onclick="firstReverse()">Reverse</button>
+        <p id="result"></p>
+
+    </body>
+    
+    <script>
+        function firstReverse() {
+            
+            str = document.getElementById('str').value;
+            let aux = ''
+
+            for(let i=0; i<str.length; i++) {
+                aux += str[str.length-(i+1)]
+            }
+
+            document.getElementById('result').innerHTML = `Result: ${aux}`
+        }        
+    </script>
+
+</html>
